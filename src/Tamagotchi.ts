@@ -3,7 +3,7 @@ type TamagotchiStatus = 'ALIVE' | 'SLEEPING' | 'DEAD';
 export class Tamagotchi {
   private name: string;
   private hunger: number = 100;
-  private happiness: number = 100;
+  private happiness: number = 34;
   private status: TamagotchiStatus = 'ALIVE';
   private energy: number = 100;
   private massage: string = '';
