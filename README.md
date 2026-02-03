@@ -1,6 +1,6 @@
 # Виробнича практика
 
 ## Гілки
--- TypeScript-Education
--- Tamagotchi
--- Blog-Project
+- TypeScript-Education
+- Tamagotchi
+- Blog-Project
