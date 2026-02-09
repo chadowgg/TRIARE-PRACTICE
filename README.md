@@ -10,4 +10,13 @@
 ---
 
 ## Реєстрація
-![Main Page](./assets/registration.png)
+![Registration](./assets/registration.png)
+
+## Вхід
+![Login](./assets/login.png)
+
+## Мой пости
+![My_Posts](./assets/my_posts.png)
+
+## Всі пости
+![My_Posts](./assets/.png)
