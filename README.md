@@ -39,16 +39,16 @@
 
 ---
 
-## 📡 API Reference
+## API Reference
 
-### 🔐 Authentication Module
+### Authentication Module
 | Method | Endpoint | Functionality | Auth Required |
 | :--- | :--- | :--- | :---: |
 | `POST` | `/auth/register` | Реєстрація нового користувача | ❌ |
 | `POST` | `/auth/login` | Вхід та отримання JWT токена | ❌ |
 | `GET` | `/auth/profile` | Отримання даних поточного профілю | ✅ |
 
-### 📄 Posts Module
+### Posts Module
 | Method | Endpoint | Functionality | Auth Required |
 | :--- | :--- | :--- | :---: |
 | `GET` | `/posts` | Отримати всі пости (Pagination & Exclude User) | ❌ |
@@ -58,7 +58,7 @@
 | `PATCH` | `/posts/:id` | Оновити існуючий пост (власник) | ✅ |
 | `DELETE` | `/posts/:id` | Видалити пост (власник) | ✅ |
 
-### 🗳️ Comments & Voting
+### Comments & Voting
 | Method | Endpoint | Functionality | Auth Required |
 | :--- | :--- | :--- | :---: |
 | `GET` | `/comments/post/:postId` | Отримати коментарі до поста (Pagination) | ❌ |
