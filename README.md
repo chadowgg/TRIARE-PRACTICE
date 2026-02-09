@@ -37,3 +37,10 @@
 ## Пагінація
 ![Create_Post](./assets/pagination.png)
 
+---
+
+
+Method,Endpoint,Description,Auth
+POST,/auth/register,Реєстрація нового акаунта,❌
+POST,/auth/login,Вхід та отримання JWT токена,❌
+GET,/auth/profile,Отримання даних поточного користувача,✅
