@@ -39,8 +39,23 @@
 
 ---
 
+## 📡 API Reference
 
-Method,Endpoint,Description,Auth
-POST,/auth/register,Реєстрація нового акаунта,❌
-POST,/auth/login,Вхід та отримання JWT токена,❌
-GET,/auth/profile,Отримання даних поточного користувача,✅
+### 🔐 Auth Module
+| Method | Endpoint | Functionality |
+| :--- | :--- | :--- |
+| `POST` | `/auth/register` | User registration |
+| `POST` | `/auth/login` | User login & JWT issuance |
+
+### 📄 Posts Module
+| Method | Endpoint | Functionality |
+| :--- | :--- | :--- |
+| `GET` | `/posts` | Get all posts (Pagination support) |
+| `POST` | `/posts` | Create a new post (Auth required) |
+| `DELETE` | `/posts/:id` | Remove post by ID |
+
+### 🗳️ Comments & Voting
+| Method | Endpoint | Functionality |
+| :--- | :--- | :--- |
+| `GET` | `/comments/post/:postId` | Fetch comments for a specific post |
+| `PATCH` | `/comments/:id/vote` | Upvote/Downvote logic (Value: 1 / -1) |
