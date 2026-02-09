@@ -21,6 +21,19 @@
 ## Всі пости
 ![My_Posts](./assets/all_posts.png)
 
-## Пост
+## Пости
 ![Post](./assets/post.png)
 ![Post_2](./assets/post_2.png)
+
+## Створити пост
+![Create_Post](./assets/create_post.png)
+
+## Редагувати пост
+![Create_Post](./assets/editing_a_post.png)
+
+## Редагувати коментарь
+![Create_Post](./assets/editing_a_comment.png)
+
+## Пагінація
+![Create_Post](./assets/pagination.png)
+
