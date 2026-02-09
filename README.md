@@ -15,7 +15,7 @@
 ## Вхід
 ![Login](./assets/login.png)
 
-## Мой пости
+## Мої пости
 ![My_Posts](./assets/my_posts.png)
 
 ## Всі пости
