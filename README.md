@@ -7,4 +7,6 @@
 - **Backend:** NestJS, TypeScript, TypeORM, PostgreSQL
 - **Tools:** JWT, Postman, Git
 
+---
+
 ![Main Page](./assets/registration.png)
