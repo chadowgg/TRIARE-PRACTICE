@@ -65,4 +65,4 @@
 | `POST` | `/comments` | Додати новий коментар до поста | ✅ |
 | `PATCH` | `/comments/:commentId` | Редагувати текст коментаря | ✅ |
 | `DELETE` | `/comments/:commentId` | Видалити коментар | ✅ |
-| `PATCH` | `/comments/:commentId/vote` | **Голосувати (Like: 1 / Dislike: -1)** | ✅ |
+| `PATCH` | `/comments/:commentId/vote` | Голосувати (Like: 1 / Dislike: -1) | ✅ |
