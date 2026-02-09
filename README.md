@@ -41,21 +41,28 @@
 
 ## 📡 API Reference
 
-### 🔐 Auth Module
-| Method | Endpoint | Functionality |
-| :--- | :--- | :--- |
-| `POST` | `/auth/register` | User registration |
-| `POST` | `/auth/login` | User login & JWT issuance |
+### 🔐 Authentication Module
+| Method | Endpoint | Functionality | Auth Required |
+| :--- | :--- | :--- | :---: |
+| `POST` | `/auth/register` | Реєстрація нового користувача | ❌ |
+| `POST` | `/auth/login` | Вхід та отримання JWT токена | ❌ |
+| `GET` | `/auth/profile` | Отримання даних поточного профілю | ✅ |
 
 ### 📄 Posts Module
-| Method | Endpoint | Functionality |
-| :--- | :--- | :--- |
-| `GET` | `/posts` | Get all posts (Pagination support) |
-| `POST` | `/posts` | Create a new post (Auth required) |
-| `DELETE` | `/posts/:id` | Remove post by ID |
+| Method | Endpoint | Functionality | Auth Required |
+| :--- | :--- | :--- | :---: |
+| `GET` | `/posts` | Отримати всі пости (Pagination & Exclude User) | ❌ |
+| `GET` | `/posts/:id` | Отримати деталі одного поста за ID | ❌ |
+| `GET` | `/posts/user/:userId` | Отримати всі пости конкретного автора | ❌ |
+| `POST` | `/posts` | Створити новий пост | ✅ |
+| `PATCH` | `/posts/:id` | Оновити існуючий пост (власник) | ✅ |
+| `DELETE` | `/posts/:id` | Видалити пост (власник) | ✅ |
 
 ### 🗳️ Comments & Voting
-| Method | Endpoint | Functionality |
-| :--- | :--- | :--- |
-| `GET` | `/comments/post/:postId` | Fetch comments for a specific post |
-| `PATCH` | `/comments/:id/vote` | Upvote/Downvote logic (Value: 1 / -1) |
+| Method | Endpoint | Functionality | Auth Required |
+| :--- | :--- | :--- | :---: |
+| `GET` | `/comments/post/:postId` | Отримати коментарі до поста (Pagination) | ❌ |
+| `POST` | `/comments` | Додати новий коментар до поста | ✅ |
+| `PATCH` | `/comments/:commentId` | Редагувати текст коментаря | ✅ |
+| `DELETE` | `/comments/:commentId` | Видалити коментар | ✅ |
+| `PATCH` | `/comments/:commentId/vote` | **Голосувати (Like: 1 / Dislike: -1)** | ✅ |
