@@ -19,4 +19,4 @@
 ![My_Posts](./assets/my_posts.png)
 
 ## Всі пости
-![My_Posts](./assets/.png)
+![My_Posts](./assets/all_posts.png)
