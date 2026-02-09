@@ -20,3 +20,7 @@
 
 ## Всі пости
 ![My_Posts](./assets/all_posts.png)
+
+## Пост
+![Post](./assets/post.png)
+![Post_2](./assets/post_2.png)
