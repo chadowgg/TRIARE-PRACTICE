@@ -9,5 +9,5 @@
 
 ---
 
+## Реєстрація
 ![Main Page](./assets/registration.png)
-*Опис: Реєстрація*
